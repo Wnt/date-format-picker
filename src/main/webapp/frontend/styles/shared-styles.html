@@ -1,0 +1,28 @@
+<dom-module id="formating-date-picker" theme-for="vaadin-custom-field">
+    <template>
+        <style>
+            :host(.formatting-date-picker) .container {
+                width: 100%;
+            }
+        </style>
+    </template>
+</dom-module>
+
+<dom-module id="formating-date-picker-mods" theme-for="vaadin-date-picker">
+    <template>
+        <style>
+            :host(.hide-input) vaadin-text-field {
+                --input-display: none;
+            }
+        </style>
+    </template>
+</dom-module>
+<dom-module id="text-field-formating-date-picker-mods" theme-for="vaadin-text-field">
+    <template>
+        <style>
+            :host(vaadin-text-field) [part="value"] {
+                display: var(--input-display, block);
+            }
+        </style>
+    </template>
+</dom-module>
